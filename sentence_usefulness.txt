@@ -23,3 +23,67 @@ Together, we can help billions of people around the globe use digital technology
 We know where we’re going as a company and how we’ll get there.$False$
 We are committed to reinvent productivity and business processes, build the intelligent cloud platform and create more personal computing.$True$
 These three goals are interconnected, they’re bold—and they’re why we are always looking to bring even more brilliant and creative people to our team.$True$
+Software engineers at Microsoft are passionate about building technologies that make the world a better place.$True$
+At Microsoft, you will collaborate with a team of programming experts to solve problems and build some of the world's most advanced services and devices.$True$
+Your efforts on the design, development, and testing of next-generation applications will have an impact on millions of people.$False$
+You are the link between abstract concepts and delivered solutions – the one who understands the consumer, solving problems, and building applications that will impact millions of people.$True$
+Applications to this opportunity are considered for all available Development (engineering) roles.$True$
+Program managers (PMs) are the in-house advocates for millions of people worldwide who predict and research how software is used and work closely with SWE to ensure our products exceed people's expectations.$True$
+You drive the technical vision, design, and implementation of software solutions.$True$
+A bachelor's, master's or doctorate degree in engineering, computer science or related field (within six months of graduation).$True$
+A year or two of experience programming in C++, Java or other computer programming languages preferred.$True$
+A year or two of experience in C/C++/C#/VB.NET and experience designing and developing tool architecture preferred.$True$
+Familiarity with managing complex project schedules, solving complex problems and nurturing cross-group collaboration.$True$
+Strong technical prowess, including understanding of algorithms, systems architecture and end-user experience.$True$
+Ability to think unconventionally to derive creative and innovative solutions.$True$
+Demonstrated expertise in feature definition, design and feasibility.$True$
+Demonstrated skill in estimating development time.$True$
+Demonstrated skills in negotiation and conflict management.$True$
+Software engineers (SWEs) dive deep into code and work with fellow programming experts to solve problems and build powerful new tools.$True$
+You are required to think about the customer to ensure stellar product quality, and you provide technical guidance to PMs as they communicate user needs and product requirements.$True$
+As a SWE, you are dedicated to producing the world's most advanced software.$False$
+Are you ready to bring the new to your career?$False$
+You’ll work alongside our clients—including 80% of the Fortune 500, and governments around the globe—and harness groundbreaking new technologies as you improve the way the world works and lives.$True$
+You’ll be part of an inclusive and diverse team, and you’ll receive the training you need to help keep us—and you—greater than.$True$
+An internship with Accenture will provide you with everything you need to start your career adventure.$False$
+You'll have the opportunity to experience our company culture, expand your network, and build skills that you'll be able to apply anywhere.$False$
+And you won't just be shadowing others—you'll be in the mix right from the start.$False$
+Your responsibilities might include conducting research, analyzing data, testing software, or writing reports.$True$
+10 - 12 week paid summer internships for undergrad and MBA/advanced degree students$True$
+Real business experience and client interactions$True$
+Dynamic company culture$True$
+Multiple networking and professional development opportunities$False$
+Mentorship and collaboration with skilled executives and employees$False$
+Volunteerism through our annual Intern Day of Service$True$
+Fun events with fellow interns$False$
+Opportunity for full-time job offer at the end of the summer$False$
+The majority of our internship roles are available for students who have completed their junior year of undergraduate study or first year of an MBA.$True$
+Applications are typically due in the early winter timeframe.$False$
+However, there are select schools that conduct interviews in the fall.$False$
+Students should check with their career center to find specific deadlines for their campus.$False$
+Students need to apply to both their campus career center posting and Accenture’s website by their school’s deadline to be considered.$False$
+Your resume and transcript are required to complete the application process.$False$
+Join Accenture and help transform leading organizations and communities around the world.$True$
+The sheer scale of our capabilities and client engagements and the way we collaborate, operate and deliver value provides an unparalleled opportunity to grow and advance.$True$
+Choose Accenture, and make delivering innovative work part of your extraordinary career.$True$
+People in our Client & Market career track drive profitable growth by developing market-relevant insights to increase market share or create new markets.$False$
+They progress through required promotion into market-facing roles that have a direct impact on sales.$True$
+Business and Systems Integration professionals analyze, design and/or develop best practice business changes through technology solutions.$True$
+The Financial Services; Insurance Technology Senior Manager provides consultative Business and System Integration services to help clients implement effective solutions.$True$
+Understands and translates customer needs into business and technology solutions via the analysis, design and/or development of best practice business changes.$True$
+Financial Services professionals design, implement and deploy packaged software solutions that have been developed to accommodate unique Financial Services industry business and management processes, regulatory requirements and other business needs.$True$
+A professional at this position level within Accenture has the following responsibilities:$False$
+Provides solutions to complex business problems for area(s) of responsibility where analysis of situations requires an in depth knowledge of organizational objectives.$True$
+Sets strategic direction to establish near term goals for area of responsibility.$True$
+Interacts with senior management levels at a client and/or within Accenture, which involves negotiating or influencing on significant matters.$True$
+As one of the world's leading professional services companies- with capabilities in strategy, consulting, digital, technology and operations, and clients in virtually every industry - we have a range of career options that can satisfy the widest of interests.$False$
+We recruit well-rounded, inquisitive students with a track record of outstanding academic performance and high learning agility.$True$
+Pursue your passion.$False$
+Hone your expertise.$False$
+Deepen your knowledge.$False$
+As an Accenture Consultant, you’ll work with the best and the brightest in the business.$False$
+Every day, you’ll leverage Accenture’s end-to-end capabilities in strategy, digital, technology and operations to help transform the world’s leading organizations, and help our clients reach their goals.$True$
+We do more than advise—we work at the heart of our clients’ organizations and help address their most complex issues.$False$
+You’ll build credibility, relevance and meaningful relationships with both colleagues and clients.$True$
+Every day, you’ll continue to advance your skills through interesting, challenging work in our dynamic, fast-paced environment.$True$
+And you’ll have diverse experiences, with the chance to do different kinds of assignments in your local market or in key cities around the world.$False$
