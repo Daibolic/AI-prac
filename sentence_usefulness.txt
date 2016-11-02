@@ -1,2 +1,25 @@
 We never stop learning about our business, our world, or ourselves.$False$
 Having this built-in attention to detail has really helped me when carrying out financial analysis and modelling.$True$
+Empower every person and organization on the planet to achieve more.$True$
+That’s what inspires us, drives our work and pushes us to challenge the status quo every day.$False$
+At Microsoft we also work to empower our employees so they can achieve more.$False$
+We believe we should each find meaning in our work and we ensure employees have the freedom and the reach to help make a difference in the world.$False$
+Growth mindset: At Microsoft, we’re insatiably curious and always learning.$True$
+We ask questions, take risks and build on each other’s ideas, because we are better together.$True$
+We lean in to uncertainty, take risks and move quickly when we make mistakes, because we know that failure happens along the way to innovation and breakthrough.$True$
+Customer obsessed: We are passionate about helping our customers achieve more, and that means we really listen and learn from them.$True$
+We bring solutions that don’t just meet the needs of customers and their businesses, they often surprise and delight them.$True$
+Then we innovate further to give them even more.$True$
+Diversity and inclusion: We don’t just value differences, we seek them out.$True$
+We invite them in.$False$
+Microsoft is a place where employees can be who they are.$False$
+We value diverse perspectives.$True$
+And as a result, we have better ideas, better products and happier customers.$True$
+One Microsoft: We are a family of individuals at a truly global company, united by a single mission.$True$
+We work together, building on each other’s ideas and collaborating across boundaries to bring the best of Microsoft to our customers and the world.$True$
+Making a difference: Our employees have access to the latest technology and tools, the power to build on the company’s far-reaching momentum and the drive to change the world.$True$
+We can make a difference.$False$
+Together, we can help billions of people around the globe use digital technology to achieve amazing things.$True$
+We know where we’re going as a company and how we’ll get there.$False$
+We are committed to reinvent productivity and business processes, build the intelligent cloud platform and create more personal computing.$True$
+These three goals are interconnected, they’re bold—and they’re why we are always looking to bring even more brilliant and creative people to our team.$True$
