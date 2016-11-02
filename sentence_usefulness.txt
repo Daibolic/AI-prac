@@ -49,7 +49,7 @@ An internship with Accenture will provide you with everything you need to start 
 You'll have the opportunity to experience our company culture, expand your network, and build skills that you'll be able to apply anywhere.$False$
 And you won't just be shadowing others—you'll be in the mix right from the start.$False$
 Your responsibilities might include conducting research, analyzing data, testing software, or writing reports.$True$
-10 - 12 week paid summer internships for undergrad and MBA/advanced degree students$True$
+10 - 12 week paid summer internships for undergrad and MBA/advanced degree students$False$
 Real business experience and client interactions$True$
 Dynamic company culture$True$
 Multiple networking and professional development opportunities$False$
@@ -87,3 +87,64 @@ We do more than advise—we work at the heart of our clients’ organizations an
 You’ll build credibility, relevance and meaningful relationships with both colleagues and clients.$True$
 Every day, you’ll continue to advance your skills through interesting, challenging work in our dynamic, fast-paced environment.$True$
 And you’ll have diverse experiences, with the chance to do different kinds of assignments in your local market or in key cities around the world.$False$
+What’s it like to work at Citadel?$False$
+Find out as global team members take a minute to give us a first person look inside.$False$
+For Deepthi, “#YearOne means being given responsibility that’s solely your own. It’s up to you to pursue greatness. It means seeing your work go into production – being able to see what you’ve created come to life.”$False$
+Constantly learning and staying ahead of global market dynamics$True$
+Working in a team environment that closely integrates trading, quantitative research and technology$True$
+Innovating using one of the industry’s most powerful trading platforms$True$
+Background in finance, economics, applied math, physics, statistics, engineering or computer science$True$
+Exceptional problem-solving skills and passion for financial markets$True$
+Experience with Excel, C, C++, Python or VBA is a plus$True$
+Employing deep fundamental research to construct long/short equities portfolios$True$
+Generating alpha by identifying out- and under-performing stocks$True$
+Working in a team environment to learn and grow with the potential opportunity for full-time employment$True$
+Previous experience in financial services prior to business school (e.g., private equity, long-only, equity research, investment banking)$True$
+Strong modeling skills and understanding of accounting/financial statements$True$
+Strong background in financial analysis and valuation$True$
+Working with large data sets to predict and test statistical market patterns$True$
+Translating math models and algorithms into code$True$
+Mixing quantitative disciplines with creative problem solving$True$
+Advanced training in math, statistics, computer science or other quantitative fields$True$
+Strong knowledge of probability and statistics$True$
+Experience with analytical packages (e.g. R, Matlab)$True$
+Familiarity with software development (e.g, C, C++, Java and /or Python)$True$
+At Citadel, each team member brings something significant to the table.$False$
+It is an entrepreneurial environment that inspires strong ideas, healthy debate and constant collaboration.$True$
+Together, we work to create new frontiers in the investment world.$False$
+SIG was founded with an entrepreneurial mindset and a rigorous analytical approach to decision making.$True$
+Building virtually all of our own trading technology from scratch, we are leaders and innovators in quantitative trading.$True$
+We are looking for multiple team members to join our Collaboration and Productivity Technologies team at our headquarters in Bala Cynwyd, PA, just outside of Center City Philadelphia.$False$
+This team is responsible for supporting, maintaining and advancing our global messaging and mobility infrastructure.$True$
+In this role, you will gain exposure to a variety of technologies and tools such as Exchange, SharePoint, Good for Enterprise, and Skype for Business.$True$
+You will work directly with business and technical teams to provide solutions to both existing and emerging technologies within these platforms.$True$
+You will work with vendors to support and resolve issues with our current tools, as well as evaluate and test new features and tools that may help to optimize our current environment.$True$
+We value the ideas and recommendations of our team members and will look to you to help us continue to advance automation within this framework.$True$
+This is a great opportunity that allows you to gain additional depth with the technologies you are familiar with, as well as grow and expand your technical knowledge and skills of messaging and mobility technologies.$False$
+Bachelor’s degree in Science, Technology, Engineering, Mathematics, or similar technical field required
+1+ years of experience with Windows systems administration required
+Experience with Microsoft technologies such as Active Directory, Exchange, SharePoint, Skype for Business or similar technologies required$True$
+Experience with mobility platforms such as Good for Enterprise, iOS, Android or similar tools strongly preferred$True$
+Scripting experience required; PowerShell preferred$True$
+Experience with Office 365 a plus$True$
+Do you want to work on designing and developing real-time financial risk systems?$True$
+SIG is a market leader and its continued success is based on the capabilities provided by our growing Technology and Quantitative Research teams.$False$
+Understanding real-time risk is critical to trading decisions.$True$
+Building these risk systems involves some of the most demanding challenges in any industry and we’re willing to use any technologies that will give us an edge.$False$
+The Sydney Risk team is responsible for on delivering highly available applications used by the traders and risk committee for real-time market risk and other analysis (including limits, counterparty risk, P&L and scenario analysis).$True$
+As a Quantitative Developer in the Risk Team, you will be involved in the analysis, design and development of risk applications in a Front Office trading environment bringing a thorough understanding of the business domain (equity derivative pricing, greeks, market data and risk metrics). $True$
+This complex software includes a combination of user-interfaces and server-side systems.$False$
+You will work closely with the traders, quantitative analysts, compliance, and technology teams to provide innovative solutions with a focus on highly scalable systems.$True$
+You will see your ideas and hard work used by experienced traders across a diverse range of instruments and markets.$False$
+A Bachelor’s Degree (or higher) in a technical or related discipline.$True$
+Post graduate qualifications (e.g. Masters, CQF) in Quantitative Finance is preferred.$True$
+Solid knowledge and experience of derivative pricing and greeks.$True$
+Equity derivatives product knowledge across Asia and Australia is preferred.$True$
+An expert level C# developer with knowledge of: design, profiling, OO, multi-threading, user-interface development with experience on both the client & server side.$True$
+Solid experience in C++ on Windows or Linux is also desirable.$True$
+A demonstrated track record in risk, quantitative or trading systems development.$True$
+Experience of real time applications (especially with Tibco RV) would be advantageous.$True$
+Excellent attention to detail, accuracy and a thorough understanding of the full software development life-cycle.$True$
+Ideally with solid experience in an Agile environment.$True$
+Strong interpersonal and communication skills for interacting with traders, quantitative analysts, and other software developers.$True$
+Ability to meet deadlines and work well under pressure in a fast-paced team environment.$True$
