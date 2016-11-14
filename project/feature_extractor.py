@@ -1,13 +1,30 @@
 import nltk
 
+keywords = {
+    'detail', 'analysis', 'curious', 'learning', 'ask', 'risks',
+    'team', 'development', 'preferred', 'skill', 'skills', 'research',
+    'knowledge', 'technical', 'programming', 'computer', 'applications',
+    'market', 'trading', 'software', 'engineering', 'idea', 'ideas',
+    'financial', 'system', 'systems', 'value', 'creative', 'capability',
+    'capabilities', 'requirements', 'diverse', 'services', 'statistics',
+    'management', 'and/or', 'c++', 'java', 'python', 'c', 'matlab', 'r',
+    'windows', 'linux', 'c#',
+    'code', 'algorithms', 'e.g', 'entrepreneurial', 'server-side', 'user-interface',
+    'user-interfaces', 'analyst', 'analysts', 'bachelor', 'masters', 'graduate',
+    'solid', 'interpersonal', 'communication', 'fast-paced', 'optimize', 'optimized',
+    'demonstrate', 'demonstrated', 'goals', 'good', 'quantitative', 'equity'
+}
 
-def contains_keyword(sen):
-    """ Returns a bool
+def num_keywords(sen):
+    """ Returns a number
 
-    Checks if sen contains predefined keywords.
+    Checks how many predefined keywords sen contains.
     """
-    #TODO
-    return False
+    counter = 0
+    for word in nltk.word_tokenize(sen):
+        if (word.lower() in keywords):
+            counter +=  1
+    return counter
 
 def contains_pattern_a(sen):
     """ Returns a bool
@@ -18,7 +35,6 @@ def contains_pattern_a(sen):
              Familiarity with...
              High proficiency in...
     """
-    #TODO
     tagged = nltk.pos_tag(nltk.word_tokenize(sen))
     i = 0
     j = 0
@@ -87,3 +103,12 @@ def contains_pattern_b(sen):
             else:
                 break
     return False
+
+
+def sentence_features(sen):
+    features = {}
+    features["num_keywords"] = num_keywords(sen)
+    features["has_pattern_a"] = contains_pattern_a(sen)
+    features["has_pattern_b"] = contains_pattern_b(sen)
+
+    return features

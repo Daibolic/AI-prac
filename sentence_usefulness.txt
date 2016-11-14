@@ -1,28 +1,28 @@
-We never stop learning about our business, our world, or ourselves.$False$
+﻿We never stop learning about our business, our world, or ourselves.$False$
 Having this built-in attention to detail has really helped me when carrying out financial analysis and modelling.$True$
 Empower every person and organization on the planet to achieve more.$True$
-That’s what inspires us, drives our work and pushes us to challenge the status quo every day.$False$
+That's what inspires us, drives our work and pushes us to challenge the status quo every day.$False$
 At Microsoft we also work to empower our employees so they can achieve more.$False$
 We believe we should each find meaning in our work and we ensure employees have the freedom and the reach to help make a difference in the world.$False$
-Growth mindset: At Microsoft, we’re insatiably curious and always learning.$True$
-We ask questions, take risks and build on each other’s ideas, because we are better together.$True$
+Growth mindset: At Microsoft, we're insatiably curious and always learning.$True$
+We ask questions, take risks and build on each other's ideas, because we are better together.$True$
 We lean in to uncertainty, take risks and move quickly when we make mistakes, because we know that failure happens along the way to innovation and breakthrough.$True$
 Customer obsessed: We are passionate about helping our customers achieve more, and that means we really listen and learn from them.$True$
-We bring solutions that don’t just meet the needs of customers and their businesses, they often surprise and delight them.$True$
+We bring solutions that don't just meet the needs of customers and their businesses, they often surprise and delight them.$True$
 Then we innovate further to give them even more.$True$
-Diversity and inclusion: We don’t just value differences, we seek them out.$True$
+Diversity and inclusion: We don't just value differences, we seek them out.$True$
 We invite them in.$False$
 Microsoft is a place where employees can be who they are.$False$
 We value diverse perspectives.$True$
 And as a result, we have better ideas, better products and happier customers.$True$
 One Microsoft: We are a family of individuals at a truly global company, united by a single mission.$True$
-We work together, building on each other’s ideas and collaborating across boundaries to bring the best of Microsoft to our customers and the world.$True$
-Making a difference: Our employees have access to the latest technology and tools, the power to build on the company’s far-reaching momentum and the drive to change the world.$True$
+We work together, building on each other's ideas and collaborating across boundaries to bring the best of Microsoft to our customers and the world.$True$
+Making a difference: Our employees have access to the latest technology and tools, the power to build on the company's far-reaching momentum and the drive to change the world.$True$
 We can make a difference.$False$
 Together, we can help billions of people around the globe use digital technology to achieve amazing things.$True$
-We know where we’re going as a company and how we’ll get there.$False$
+We know where we're going as a company and how we'll get there.$False$
 We are committed to reinvent productivity and business processes, build the intelligent cloud platform and create more personal computing.$True$
-These three goals are interconnected, they’re bold—and they’re why we are always looking to bring even more brilliant and creative people to our team.$True$
+These three goals are interconnected, they're bold - and they're why we are always looking to bring even more brilliant and creative people to our team.$True$
 Software engineers at Microsoft are passionate about building technologies that make the world a better place.$True$
 At Microsoft, you will collaborate with a team of programming experts to solve problems and build some of the world's most advanced services and devices.$True$
 Your efforts on the design, development, and testing of next-generation applications will have an impact on millions of people.$False$
@@ -43,11 +43,11 @@ Software engineers (SWEs) dive deep into code and work with fellow programming e
 You are required to think about the customer to ensure stellar product quality, and you provide technical guidance to PMs as they communicate user needs and product requirements.$True$
 As a SWE, you are dedicated to producing the world's most advanced software.$False$
 Are you ready to bring the new to your career?$False$
-You’ll work alongside our clients—including 80% of the Fortune 500, and governments around the globe—and harness groundbreaking new technologies as you improve the way the world works and lives.$True$
-You’ll be part of an inclusive and diverse team, and you’ll receive the training you need to help keep us—and you—greater than.$True$
+You'll work alongside our clients - including 80% of the Fortune 500, and governments around the globe - and harness groundbreaking new technologies as you improve the way the world works and lives.$True$
+You'll be part of an inclusive and diverse team, and you'll receive the training you need to help keep us - and you - greater than.$True$
 An internship with Accenture will provide you with everything you need to start your career adventure.$False$
 You'll have the opportunity to experience our company culture, expand your network, and build skills that you'll be able to apply anywhere.$False$
-And you won't just be shadowing others—you'll be in the mix right from the start.$False$
+And you won't just be shadowing others - you'll be in the mix right from the start.$False$
 Your responsibilities might include conducting research, analyzing data, testing software, or writing reports.$True$
 10 - 12 week paid summer internships for undergrad and MBA/advanced degree students$False$
 Real business experience and client interactions$True$
@@ -61,7 +61,7 @@ The majority of our internship roles are available for students who have complet
 Applications are typically due in the early winter timeframe.$False$
 However, there are select schools that conduct interviews in the fall.$False$
 Students should check with their career center to find specific deadlines for their campus.$False$
-Students need to apply to both their campus career center posting and Accenture’s website by their school’s deadline to be considered.$False$
+Students need to apply to both their campus career center posting and Accenture's website by their school's deadline to be considered.$False$
 Your resume and transcript are required to complete the application process.$False$
 Join Accenture and help transform leading organizations and communities around the world.$True$
 The sheer scale of our capabilities and client engagements and the way we collaborate, operate and deliver value provides an unparalleled opportunity to grow and advance.$True$
@@ -81,18 +81,18 @@ We recruit well-rounded, inquisitive students with a track record of outstanding
 Pursue your passion.$False$
 Hone your expertise.$False$
 Deepen your knowledge.$False$
-As an Accenture Consultant, you’ll work with the best and the brightest in the business.$False$
-Every day, you’ll leverage Accenture’s end-to-end capabilities in strategy, digital, technology and operations to help transform the world’s leading organizations, and help our clients reach their goals.$True$
-We do more than advise—we work at the heart of our clients’ organizations and help address their most complex issues.$False$
-You’ll build credibility, relevance and meaningful relationships with both colleagues and clients.$True$
-Every day, you’ll continue to advance your skills through interesting, challenging work in our dynamic, fast-paced environment.$True$
-And you’ll have diverse experiences, with the chance to do different kinds of assignments in your local market or in key cities around the world.$False$
-What’s it like to work at Citadel?$False$
+As an Accenture Consultant, you'll work with the best and the brightest in the business.$False$
+Every day, you'll leverage Accenture's end-to-end capabilities in strategy, digital, technology and operations to help transform the world's leading organizations, and help our clients reach their goals.$True$
+We do more than advise - we work at the heart of our clients' organizations and help address their most complex issues.$False$
+You'll build credibility, relevance and meaningful relationships with both colleagues and clients.$True$
+Every day, you'll continue to advance your skills through interesting, challenging work in our dynamic, fast-paced environment.$True$
+And you'll have diverse experiences, with the chance to do different kinds of assignments in your local market or in key cities around the world.$False$
+What's it like to work at Citadel?$False$
 Find out as global team members take a minute to give us a first person look inside.$False$
-For Deepthi, “#YearOne means being given responsibility that’s solely your own. It’s up to you to pursue greatness. It means seeing your work go into production – being able to see what you’ve created come to life.”$False$
+For Deepthi, “#YearOne means being given responsibility that's solely your own. It's up to you to pursue greatness. It means seeing your work go into production – being able to see what you've created come to life.”$False$
 Constantly learning and staying ahead of global market dynamics$True$
 Working in a team environment that closely integrates trading, quantitative research and technology$True$
-Innovating using one of the industry’s most powerful trading platforms$True$
+Innovating using one of the industry's most powerful trading platforms$True$
 Background in finance, economics, applied math, physics, statistics, engineering or computer science$True$
 Exceptional problem-solving skills and passion for financial markets$True$
 Experience with Excel, C, C++, Python or VBA is a plus$True$
@@ -121,7 +121,7 @@ You will work directly with business and technical teams to provide solutions to
 You will work with vendors to support and resolve issues with our current tools, as well as evaluate and test new features and tools that may help to optimize our current environment.$True$
 We value the ideas and recommendations of our team members and will look to you to help us continue to advance automation within this framework.$True$
 This is a great opportunity that allows you to gain additional depth with the technologies you are familiar with, as well as grow and expand your technical knowledge and skills of messaging and mobility technologies.$False$
-Bachelor’s degree in Science, Technology, Engineering, Mathematics, or similar technical field required
+Bachelor's degree in Science, Technology, Engineering, Mathematics, or similar technical field required
 1+ years of experience with Windows systems administration required
 Experience with Microsoft technologies such as Active Directory, Exchange, SharePoint, Skype for Business or similar technologies required$True$
 Experience with mobility platforms such as Good for Enterprise, iOS, Android or similar tools strongly preferred$True$
@@ -130,13 +130,13 @@ Experience with Office 365 a plus$True$
 Do you want to work on designing and developing real-time financial risk systems?$True$
 SIG is a market leader and its continued success is based on the capabilities provided by our growing Technology and Quantitative Research teams.$False$
 Understanding real-time risk is critical to trading decisions.$True$
-Building these risk systems involves some of the most demanding challenges in any industry and we’re willing to use any technologies that will give us an edge.$False$
+Building these risk systems involves some of the most demanding challenges in any industry and we're willing to use any technologies that will give us an edge.$False$
 The Sydney Risk team is responsible for on delivering highly available applications used by the traders and risk committee for real-time market risk and other analysis (including limits, counterparty risk, P&L and scenario analysis).$True$
 As a Quantitative Developer in the Risk Team, you will be involved in the analysis, design and development of risk applications in a Front Office trading environment bringing a thorough understanding of the business domain (equity derivative pricing, greeks, market data and risk metrics). $True$
 This complex software includes a combination of user-interfaces and server-side systems.$False$
 You will work closely with the traders, quantitative analysts, compliance, and technology teams to provide innovative solutions with a focus on highly scalable systems.$True$
 You will see your ideas and hard work used by experienced traders across a diverse range of instruments and markets.$False$
-A Bachelor’s Degree (or higher) in a technical or related discipline.$True$
+A Bachelor's Degree (or higher) in a technical or related discipline.$True$
 Post graduate qualifications (e.g. Masters, CQF) in Quantitative Finance is preferred.$True$
 Solid knowledge and experience of derivative pricing and greeks.$True$
 Equity derivatives product knowledge across Asia and Australia is preferred.$True$
