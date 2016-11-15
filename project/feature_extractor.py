@@ -10,7 +10,7 @@ keywords = {
     'management', 'and/or', 'c++', 'java', 'python', 'c', 'matlab', 'r',
     'windows', 'linux', 'c#',
     'code', 'algorithms', 'e.g', 'entrepreneurial', 'server-side', 'user-interface',
-    'user-interfaces', 'analyst', 'analysts', 'bachelor', 'masters', 'graduate',
+    'user-interfaces', 'analyst', 'analysts', 'bachelor', 'masters', 'graduate', 'leadership',
     'solid', 'interpersonal', 'communication', 'fast-paced', 'optimize', 'optimized',
     'demonstrate', 'demonstrated', 'goals', 'good', 'quantitative', 'equity'
 }
