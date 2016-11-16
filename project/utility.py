@@ -1,13 +1,13 @@
 import nltk
 import feature_extractor, random
 
-def most_freq(file, encoding, num):
+def most_freq(file_name,num):
     """ file is the name of the file in string.
         It only adds the $True$ sentences to the set
         it outputs the most frequent num words
     """
     words = ""
-    f = open(file, mode='r', encoding=encoding)
+    f = open(file_name, mode='r')
     line = f.readline()
     while (line != ''):
         if (line[-7:] == "$True$\n"):
@@ -17,12 +17,12 @@ def most_freq(file, encoding, num):
     tokens = nltk.word_tokenize(words)
     text = nltk.Text(tokens)
     fdist = nltk.FreqDist(text)
-    print(fdist.most_common(num))
+    print fdist.most_common(num)
 
-def separator(file, encoding = 'utf8'):
+def separator(file_name):
     """Separates the file into two files, labeled useful and not_useful
     """
-    f = open(file, mode = 'r', encoding = encoding)
+    f = open(file_name, mode = 'r')
     useful = open('useful', 'w+', encoding='utf8')
     not_useful = open('useless', 'w+', encoding='utf8')
     line = f.readline()
@@ -38,11 +38,11 @@ def separator(file, encoding = 'utf8'):
     useful.close()
     not_useful.close()
 
-def generate_labeled_set(file, encoding = 'utf8'):
+def generate_labeled_set(file_name):
     """ Given a file name that contains sentences marked using the $True$ / $False
         notation, geneate a labeled set
     """
-    f = open(file, mode = 'r', encoding = encoding)
+    f = open(file_name, mode = 'r')
     labeled_sen = []
     line = f.readline()
     while(line != ''):
@@ -58,6 +58,14 @@ def generate_labeled_set(file, encoding = 'utf8'):
     f.close()
     return labeled_sen
 
+def train_classifier():
+    labeled_set = generate_labeled_set('../sentence_usefulness.txt')
+    random.shuffle(labeled_set)
+    div = len(labeled_set) // 2
+    train_set = nltk.classify.apply_features(feature_extractor.sentence_features, labeled_set[div:])
+    classifier = nltk.NaiveBayesClassifier.train(train_set)
+    return classifier
+
 def print_accuracy():
     labeled_set = generate_labeled_set('../sentence_usefulness.txt')
     random.shuffle(labeled_set)
@@ -65,4 +73,4 @@ def print_accuracy():
     train_set = nltk.classify.apply_features(feature_extractor.sentence_features, labeled_set[div:])
     test_set = nltk.classify.apply_features(feature_extractor.sentence_features, labeled_set[:div])
     classifier = nltk.NaiveBayesClassifier.train(train_set)
-    print(nltk.classify.accuracy(classifier, test_set))
+    print nltk.classify.accuracy(classifier, test_set)

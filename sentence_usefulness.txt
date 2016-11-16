@@ -14,10 +14,10 @@ Diversity and inclusion: We don't just value differences, we seek them out.$True
 We invite them in.$False$
 Microsoft is a place where employees can be who they are.$False$
 We value diverse perspectives.$True$
-And as a result, we have better ideas, better products and happier customers.$True$
-One Microsoft: We are a family of individuals at a truly global company, united by a single mission.$True$
-We work together, building on each other's ideas and collaborating across boundaries to bring the best of Microsoft to our customers and the world.$True$
-Making a difference: Our employees have access to the latest technology and tools, the power to build on the company's far-reaching momentum and the drive to change the world.$True$
+And as a result, we have better ideas, better products and happier customers.$False$
+One Microsoft: We are a family of individuals at a truly global company, united by a single mission.$False$
+We work together, building on each other's ideas and collaborating across boundaries to bring the best of Microsoft to our customers and the world.$False$
+Making a difference: Our employees have access to the latest technology and tools, the power to build on the company's far-reaching momentum and the drive to change the world.$False$
 We can make a difference.$False$
 Together, we can help billions of people around the globe use digital technology to achieve amazing things.$True$
 We know where we're going as a company and how we'll get there.$False$
@@ -51,12 +51,12 @@ And you won't just be shadowing others - you'll be in the mix right from the sta
 Your responsibilities might include conducting research, analyzing data, testing software, or writing reports.$True$
 10 - 12 week paid summer internships for undergrad and MBA/advanced degree students$False$
 Real business experience and client interactions$True$
-Dynamic company culture$True$
-Multiple networking and professional development opportunities$False$
-Mentorship and collaboration with skilled executives and employees$False$
-Volunteerism through our annual Intern Day of Service$True$
-Fun events with fellow interns$False$
-Opportunity for full-time job offer at the end of the summer$False$
+Dynamic company culture.$True$
+Multiple networking and professional development opportunities.$False$
+Mentorship and collaboration with skilled executives and employees.$False$
+Volunteerism through our annual Intern Day of Service.$True$
+Fun events with fellow interns.$False$
+Opportunity for full-time job offer at the end of the summer.$False$
 The majority of our internship roles are available for students who have completed their junior year of undergraduate study or first year of an MBA.$True$
 Applications are typically due in the early winter timeframe.$False$
 However, there are select schools that conduct interviews in the fall.$False$
@@ -121,11 +121,11 @@ You will work directly with business and technical teams to provide solutions to
 You will work with vendors to support and resolve issues with our current tools, as well as evaluate and test new features and tools that may help to optimize our current environment.$True$
 We value the ideas and recommendations of our team members and will look to you to help us continue to advance automation within this framework.$True$
 This is a great opportunity that allows you to gain additional depth with the technologies you are familiar with, as well as grow and expand your technical knowledge and skills of messaging and mobility technologies.$False$
-Bachelor's degree in Science, Technology, Engineering, Mathematics, or similar technical field required
-1+ years of experience with Windows systems administration required
+Bachelor's degree in Science, Technology, Engineering, Mathematics, or similar technical field required.$True$
+1+ years of experience with Windows systems administration required.$True
 Experience with Microsoft technologies such as Active Directory, Exchange, SharePoint, Skype for Business or similar technologies required$True$
 Experience with mobility platforms such as Good for Enterprise, iOS, Android or similar tools strongly preferred$True$
-Scripting experience required; PowerShell preferred$True$
+Scripting experience required; PowerShell preferred.$True$
 Experience with Office 365 a plus$True$
 Do you want to work on designing and developing real-time financial risk systems?$True$
 SIG is a market leader and its continued success is based on the capabilities provided by our growing Technology and Quantitative Research teams.$False$
@@ -148,3 +148,34 @@ Excellent attention to detail, accuracy and a thorough understanding of the full
 Ideally with solid experience in an Agile environment.$True$
 Strong interpersonal and communication skills for interacting with traders, quantitative analysts, and other software developers.$True$
 Ability to meet deadlines and work well under pressure in a fast-paced team environment.$True$
+Be a Host. $False$
+Collaborative. Anticipates the needs of others. Prepared. Authentic. Listens. Advocates and eliminates interference for others. Considers the whole person. Humble. $True$
+Every Frame Matters. $False$
+Thinks holistically. Rigorous about quality. Appreciates the details and prioritizes the right ones.$True$ 
+Simplify $False$
+Prioritizes. Distills a problem to its essence. Makes and communicates clear decisions. $True$
+Champion the Mission. $False$
+Passionate. Committed. Optimistic. Puts the Airbnb community first. Takes ownership and delivers results. Perpetuates belonging. $True$
+Be a "Cereal" Entrepreneur. $True$
+Embrace the Adventure. $False$
+Flexible. Risk tolerant. Always learning. Curious. Open-minded. Brings joy to their work. $True$
+We're dedicated to constant learning. $False$ 
+That's why we organize Fireside Chats, which bring in industry leaders to share their experiences and wisdom. $False$
+From CEOs to musicians, these leaders always have something invaluable to teach us. $False$
+Strong CS fundamentals gained through current pursuit of Bachelor's, Master's, or PhD degree in computer science, math or related discipline. $True$
+Five years setting vision and goals for development infrastructure across platforms, including: web, mobile, and native apps. $True$
+Previous experience working closely with engineering teams to understand their experience as builders and maintainers of code. $True$
+Proven experience executing tool development, services, and platforms, constantly checking for user satisfaction. $True$
+Demonstrated success in setting rigorous metrics, and achieving goals. $True$
+Ability to guide principles for the improvement of productivity of engineers specifically focusing on performance of critical development lifecycle stages. $True$
+At Airbnb, infrastructure is a strategic advantage that drives business results. $False$
+Motivation and ability to lead cross-functional teams in a highly collaborative environment. $True$
+Strong leadership skills, excellent written and oral communication skills. $True$
+Empathy for users and intuition for developing tech products that solve user needs.$True$
+Sharp analytical and critical thinking skills, can use data to drive strategic decisions. $True$
+500 million people around the world use Dropbox to work the way they want, on any device, wherever they go. $False$
+With 200,000 businesses on Dropbox Business, we're transforming everyday workflows and entire industries. $False$
+We believe technology should get out of the way, so there's no limit to what people can do.$False$ 
+We're a thoughtful, tightly-knit team that's committed to realizing ambitious ideas. $True$
+We're making technology work for the world, and the best is still to come. $False$
+We're empowering teams to do great things together.$False$

@@ -15,18 +15,26 @@ keywords = {
     'demonstrate', 'demonstrated', 'goals', 'good', 'quantitative', 'equity'
 }
 
-def num_keywords(sen):
+def contains_nnp(tagged):
+    """ Returns a boolean
+        Test if the sentence contains a proper noun
+    """
+    for (_ , t) in tagged:
+        if (t == "NNP" or t == "NNPS"):
+            return True
+
+def num_keywords(tokens):
     """ Returns a number
 
     Checks how many predefined keywords sen contains.
     """
     counter = 0
-    for word in nltk.word_tokenize(sen):
+    for word in tokens:
         if (word.lower() in keywords):
             counter +=  1
     return counter
 
-def contains_pattern_a(sen):
+def contains_pattern_a(tagged):
     """ Returns a bool
 
     Checks if sen contains predefined patterns:
@@ -35,7 +43,6 @@ def contains_pattern_a(sen):
              Familiarity with...
              High proficiency in...
     """
-    tagged = nltk.pos_tag(nltk.word_tokenize(sen))
     i = 0
     j = 0
     while (i < len(tagged)):
@@ -71,7 +78,7 @@ def contains_pattern_a(sen):
                 break
     return False
 
-def contains_pattern_b(sen):
+def contains_pattern_b(tagged):
     """ Returns a bool
 
     Checks if sen contains predefined patterns:
@@ -79,7 +86,6 @@ def contains_pattern_b(sen):
         e.g. Proficient in C++
                 Familiar with Office
     """
-    tagged = nltk.pos_tag(nltk.word_tokenize(sen))
     i = 0
     j = 0
     while (i < len(tagged)):
@@ -106,9 +112,12 @@ def contains_pattern_b(sen):
 
 
 def sentence_features(sen):
+    tokens = nltk.word_tokenize(sen)
+    tagged = nltk.pos_tag(tokens)
     features = {}
-    features["num_keywords"] = num_keywords(sen)
-    features["has_pattern_a"] = contains_pattern_a(sen)
-    features["has_pattern_b"] = contains_pattern_b(sen)
+    features["num_keywords"] = num_keywords(tokens)
+    features["has_pattern_a"] = contains_pattern_a(tagged)
+    features["has_pattern_b"] = contains_pattern_b(tagged)
+    features["has_NNP"] = contains_nnp(tagged)
 
     return features
