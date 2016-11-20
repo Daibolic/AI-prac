@@ -1,15 +1,15 @@
 ﻿We never stop learning about our business, our world, or ourselves.$False$
-Having this built-in attention to detail has really helped me when carrying out financial analysis and modelling.$True$
-Empower every person and organization on the planet to achieve more.$True$
+Having this built-in attention to detail has really helped me when carrying out financial analysis and modelling.$False$
+Empower every person and organization on the planet to achieve more.$False$
 That's what inspires us, drives our work and pushes us to challenge the status quo every day.$False$
 At Microsoft we also work to empower our employees so they can achieve more.$False$
 We believe we should each find meaning in our work and we ensure employees have the freedom and the reach to help make a difference in the world.$False$
 Growth mindset: At Microsoft, we're insatiably curious and always learning.$True$
 We ask questions, take risks and build on each other's ideas, because we are better together.$True$
 We lean in to uncertainty, take risks and move quickly when we make mistakes, because we know that failure happens along the way to innovation and breakthrough.$True$
-Customer obsessed: We are passionate about helping our customers achieve more, and that means we really listen and learn from them.$True$
-We bring solutions that don't just meet the needs of customers and their businesses, they often surprise and delight them.$True$
-Then we innovate further to give them even more.$True$
+Customer obsessed: We are passionate about helping our customers achieve more, and that means we really listen and learn from them.$False$
+We bring solutions that don't just meet the needs of customers and their businesses, they often surprise and delight them.$False$
+Then we innovate further to give them even more.$False$
 Diversity and inclusion: We don't just value differences, we seek them out.$True$
 We invite them in.$False$
 Microsoft is a place where employees can be who they are.$False$
@@ -19,15 +19,15 @@ One Microsoft: We are a family of individuals at a truly global company, united 
 We work together, building on each other's ideas and collaborating across boundaries to bring the best of Microsoft to our customers and the world.$False$
 Making a difference: Our employees have access to the latest technology and tools, the power to build on the company's far-reaching momentum and the drive to change the world.$False$
 We can make a difference.$False$
-Together, we can help billions of people around the globe use digital technology to achieve amazing things.$True$
+Together, we can help billions of people around the globe use digital technology to achieve amazing things.$False$
 We know where we're going as a company and how we'll get there.$False$
-We are committed to reinvent productivity and business processes, build the intelligent cloud platform and create more personal computing.$True$
+We are committed to reinvent productivity and business processes, build the intelligent cloud platform and create more personal computing.$False$
 These three goals are interconnected, they're bold - and they're why we are always looking to bring even more brilliant and creative people to our team.$True$
-Software engineers at Microsoft are passionate about building technologies that make the world a better place.$True$
+Software engineers at Microsoft are passionate about building technologies that make the world a better place.$False$
 At Microsoft, you will collaborate with a team of programming experts to solve problems and build some of the world's most advanced services and devices.$True$
 Your efforts on the design, development, and testing of next-generation applications will have an impact on millions of people.$False$
 You are the link between abstract concepts and delivered solutions – the one who understands the consumer, solving problems, and building applications that will impact millions of people.$True$
-Applications to this opportunity are considered for all available Development (engineering) roles.$True$
+Applications to this opportunity are considered for all available Development (engineering) roles.$False$
 Program managers (PMs) are the in-house advocates for millions of people worldwide who predict and research how software is used and work closely with SWE to ensure our products exceed people's expectations.$True$
 You drive the technical vision, design, and implementation of software solutions.$True$
 A bachelor's, master's or doctorate degree in engineering, computer science or related field (within six months of graduation).$True$
@@ -39,11 +39,11 @@ Ability to think unconventionally to derive creative and innovative solutions.$T
 Demonstrated expertise in feature definition, design and feasibility.$True$
 Demonstrated skill in estimating development time.$True$
 Demonstrated skills in negotiation and conflict management.$True$
-Software engineers (SWEs) dive deep into code and work with fellow programming experts to solve problems and build powerful new tools.$True$
+Software engineers (SWEs) dive deep into code and work with fellow programming experts to solve problems and build powerful new tools.$False$
 You are required to think about the customer to ensure stellar product quality, and you provide technical guidance to PMs as they communicate user needs and product requirements.$True$
 As a SWE, you are dedicated to producing the world's most advanced software.$False$
 Are you ready to bring the new to your career?$False$
-You'll work alongside our clients - including 80% of the Fortune 500, and governments around the globe - and harness groundbreaking new technologies as you improve the way the world works and lives.$True$
+You'll work alongside our clients - including 80% of the Fortune 500, and governments around the globe - and harness groundbreaking new technologies as you improve the way the world works and lives.$False$
 You'll be part of an inclusive and diverse team, and you'll receive the training you need to help keep us - and you - greater than.$True$
 An internship with Accenture will provide you with everything you need to start your career adventure.$False$
 You'll have the opportunity to experience our company culture, expand your network, and build skills that you'll be able to apply anywhere.$False$
