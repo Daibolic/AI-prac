@@ -54,6 +54,44 @@ def generate_help_file():
     skills.close()
     personal.close()
 
+def generate_phrase_files():
+    """ Generates a file for all the phrases extracted from file named skills,
+        and a file for all the adjs extracted from file named personal.
+    """
+    f = open('skills', 'r')
+    i = 0
+    line = f.readline()
+    skills = {}
+    while (line != ''):
+        if (i % 2 == 0):
+            tagged = nltk.pos_tag(nltk.word_tokenize(line))
+            phrase_extractor.extract_skill_phrase(tagged, skills)
+        line = f.readline()
+        i += 1
+    f.close()
+
+    skills_phrases = open('skills_phrases', 'w+')
+    for (key, value) in skills.iteritems():
+        skills_phrases.write(key + " (" + value + ")" + '\n')
+    skills_phrases.close()
+
+    fp = open('personal', 'r')
+    j = 0
+    line = fp.readline()
+    adjs = {}
+    while(line != ''):
+        if (j % 2 == 0):
+            tagged = nltk.pos_tag(nltk.word_tokenize(line))
+            phrase_extractor.extract_adjectives(tagged, adjs)
+        line = fp.readline()
+    fp.close()
+
+    adj_phrases = open('adj_phrases', 'w+')
+    for key in adjs:
+        adj_phrases.write(key + '\n')
+    adj_phrases.close()
+
+
 def generate_usefulness_labeled_set(file_name):
     """ Given a file name that contains sentences marked using the $True$ / $False
         notation, geneate a labeled set
@@ -92,21 +130,65 @@ def generate_cat_labeled_set(file_name):
     f.close()
     return labeled_sen
 
-def train_usefulness_classifier():
+def train_usefulness_classifier(full_set):
+    # if full_set, all sentences are used for training.
     labeled_set = generate_usefulness_labeled_set('../sentence_usefulness.txt')
     random.shuffle(labeled_set)
     div = len(labeled_set) // 2
-    train_set = nltk.classify.apply_features(feature_extractor.sentence_features, labeled_set[div:])
+    if (full_set):
+        train_set = nltk.classify.apply_features(feature_extractor.sentence_features, labeled_set)
+    else:
+        train_set = nltk.classify.apply_features(feature_extractor.sentence_features, labeled_set[div:])
     classifier = nltk.NaiveBayesClassifier.train(train_set)
     return classifier
 
-def train_cat_classifier():
+def train_cat_classifier(full_set):
     labeled_set = generate_cat_labeled_set('useful_cat_train')
     random.shuffle(labeled_set)
     div = len(labeled_set) // 2
-    train_set = nltk.classify.apply_features(feature_extractor.cat_features, labeled_set[div:])
+    if (full_set):
+        train_set = nltk.classify.apply_features(feature_extractor.cat_features, labeled_set)
+    else:
+        train_set = nltk.classify.apply_features(feature_extractor.cat_features, labeled_set[div:])
     classifier = nltk.NaiveBayesClassifier.train(train_set)
     return classifier
+
+def train_adj_classifier():
+    #TODO
+    # Returns a classifier to for useful adjectives.
+    return None
+
+def get_classifier_accuracy(classifier_type):
+    """ Returns a tuple with the classifier and its accuracy as (classifier, accuracy)
+        classifier_type is a char:
+        'u' - sentence usefulness
+        'c' - sentence category
+        'a' - adjective usefulness
+    """
+    if (classifier_type == 'u'):
+        labeled_set = generate_usefulness_labeled_set('../sentence_usefulness.txt')
+        random.shuffle(labeled_set)
+        div = len(labeled_set) // 2
+        train_set = nltk.classify.apply_features(feature_extractor.sentence_features, labeled_set[div:])
+        test_set = nltk.classify.apply_features(feature_extractor.sentence_features, labeled_set[:div])
+        classifier = nltk.NaiveBayesClassifier.train(train_set)
+        accuracy = nltk.classify.accuracy(classifier, test_set)
+        return (classifier, accuracy)
+    elif (classifier_type == 'c'):
+        labeled_set = generate_usefulness_labeled_set('useful_cat_train')
+        random.shuffle(labeled_set)
+        div = len(labeled_set) // 2
+        train_set = nltk.classify.apply_features(feature_extractor.sentence_features, labeled_set[div:])
+        test_set = nltk.classify.apply_features(feature_extractor.sentence_features, labeled_set[:div])
+        classifier = nltk.NaiveBayesClassifier.train(train_set)
+        accuracy = nltk.classify.accuracy(classifier, test_set)
+        return (classifier, accuracy)
+    elif (classifier_type == 'a'):
+        #TODO need to fill up this portion
+        return (None, 0)
+    else:
+        print "Unsupported classifier type"
+        return None
 
 def print_usefulness_accuracy():
     labeled_set = generate_usefulness_labeled_set('../sentence_usefulness.txt')

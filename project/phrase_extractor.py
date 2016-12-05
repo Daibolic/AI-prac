@@ -7,11 +7,10 @@ def split_tag(tagged):
     return (words, tags)
 
 
-def extract_skill_phrase(tagged):
-    """ Given a tagged skills sentence, return a dictionary that maps
-        phrase to its category
+def extract_skill_phrase(tagged, skills):
+    """ Given a tagged skills sentence and a dictionary that maps
+        phrase to its category, updates the dicionary
     """
-    skills = {}
     nouns = {'NNS', 'NN'}
     adjs = {'JJ', 'JJR', 'JJS'}
     (words, tags) = split_tag(tagged)
@@ -70,4 +69,8 @@ def extract_skill_phrase(tagged):
         else:
             head += 1
             probe = head
-    return skills
+
+def extract_adjectives(tagged, adjs):
+    for (w, t) in tagged:
+        if (t == 'JJ'):
+            adjs[w] = t
