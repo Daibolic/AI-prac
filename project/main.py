@@ -1,7 +1,12 @@
 import nltk, utility
 import feature_extractor as fe
 import phrase_extractor as pe
+import categorize as cat
+import userdata as ud
 
+
+metadatafile = "metadata.txt"
+skillsfile = "skills.txt"
 
 class LetterGenerator:
     'Class for the letter generator'
@@ -104,8 +109,12 @@ class LetterGenerator:
             tagged = nltk.pos_tag(nltk.word_tokenize(sent))
             pe.extract_adjectives(tagged, adjs)
         
-        print skills
-        print adjs
+        qualities = set()
+        for adj in adjs:
+            quality = cat.get_category(adj)
+            qualities.add(quality)
 
-        #TODO @Sush your part comes in here.
+        metadata = ud.get_user_metadata(metadatafile)
+        skills, qualities = ud.get_user_skills(skillsfile)
+        
         return
