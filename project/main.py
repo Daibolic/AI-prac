@@ -115,6 +115,17 @@ class LetterGenerator:
             qualities.add(quality)
 
         metadata = ud.get_user_metadata(metadatafile)
-        skills, qualities = ud.get_user_skills(skillsfile)
+        usr_skills, usr_qualities = ud.get_user_skills(skillsfile)
+
+
+        matched_skills = []
+        for usr_skill in usr_skills:
+            for key in skills:
+                if ((usr_skill.lower() in key.lower()) or (key.lower() in usr_skill.lower())):
+                    matched_skills.append(usr_skill)
         
+        matched_qualities = qualities & set(usr_qualities.keys())
+
+        print matched_qualities
+        print matched_skills
         return
