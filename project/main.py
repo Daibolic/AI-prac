@@ -7,6 +7,30 @@ class LetterGenerator:
     'Class for the letter generator'
     usefulness_classifier = None
     cat_classifier = None
+    template = "My name is [NM] and I am a [GD] student at [IN].\nI am very interested in this job posting for [PN] at [CN].\nI have experience in [SK] which makes me an appropriate candidate for this job.\n[PQ].\nI think I would do well at this position. Thank you very much!\n[NM]"
+    headers = {
+        "creativity": "Creativity defines who I am. ",
+
+        "communication": "I communicated effectively under different situations. ",
+
+        "collaboration":"Working in a team environment is something I enjoy a lot. ",
+
+        "responsibility": "I will do everything I can to complete the tasks assigned to me. ",
+
+        "leadership": "While I am a good follower, I also know how to lead a team. ",
+
+        "entrepreneurial": "Making brand new things gives me thrills all the time. ",
+
+        "diverse": "I have met people from many different backgrounds through out my life so far. ",
+
+        "motivated": "I not only do things, I do them with passion. ",
+
+        "detail": "While being able to see the big picture is important, I am also able to scrutinize the details. ",
+
+        "agile": "I am able to adapt to different environments very quickly. ",
+
+        "execute": "I love the feeling of making things happen. "
+    }
 
 
     def __init__(self, naive = True):
@@ -80,5 +104,8 @@ class LetterGenerator:
             tagged = nltk.pos_tag(nltk.word_tokenize(sent))
             pe.extract_adjectives(tagged, adjs)
         
+        print skills
+        print adjs
+
         #TODO @Sush your part comes in here.
         return
