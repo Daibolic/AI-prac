@@ -1,0 +1,7 @@
+name: Sush
+year: senior
+degree: undergraduate
+major: CS
+institution: Cornell
+position: PM
+company: Microsoft
