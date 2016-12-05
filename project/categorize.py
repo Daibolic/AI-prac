@@ -3,7 +3,7 @@ from nltk.stem.snowball import EnglishStemmer
 import enchant
 from collections import defaultdict
 
-depth = 2
+depth = 1
 
 #Wordnik api
 apiUrl = 'http://api.wordnik.com/v4'

@@ -110,9 +110,9 @@ class LetterGenerator:
             pe.extract_adjectives(tagged, adjs)
         
         qualities = set()
-        for adj in adjs:
+        for adj in adjs.keys()[:10]:
             quality = cat.get_category(adj)
-            qualities.add(quality)
+            qualities |= set(quality)
 
         metadata = ud.get_user_metadata(metadatafile)
         usr_skills, usr_qualities = ud.get_user_skills(skillsfile)
@@ -120,12 +120,12 @@ class LetterGenerator:
 
         matched_skills = []
         for usr_skill in usr_skills:
-            for key in skills:
-                if ((usr_skill.lower() in key.lower()) or (key.lower() in usr_skill.lower())):
-                    matched_skills.append(usr_skill)
+            if usr_skill.lower() in [s.lower() for s in skills]:
+                matched_skills.append(usr_skill)
         
         matched_qualities = qualities & set(usr_qualities.keys())
 
+        print "requirement qualities:" , qualities
         print matched_qualities
         print matched_skills
         return
