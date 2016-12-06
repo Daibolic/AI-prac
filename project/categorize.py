@@ -22,11 +22,11 @@ stemmer = EnglishStemmer()
 #soft skills
 categories = {"creativity":["creative","innovative","original","authentic","curious","unconventional","quirky"], 
 
-"communication":["interpersonal","negotiation","influencing","presentation","verbal","written","listening","clients"],
+"communication":["interpersonal","negotiation","influencing","presentation","verbal","written","listening","clients","human","personal","interpersonal"],
 
 "collaboration":["teamwork","together","group","team","relationships"],
 
-"responsibility":["credible","repsonsible","prepared","prioritize","confidentiality"],
+"responsibility":["credible","repsonsible","prepared","prioritize","confidentiality","consistent"],
 
 "leadership":["visionary","strategic","leader","coach","lead"],
 
@@ -85,7 +85,7 @@ def load_synlist(redo=False):
     set redo to True if data must be downloaded 
     set to False if local data is to be used
     """
-    global synlist
+    global synlist,stemlist
     f = open(synfile)
     strs = f.read()
     f.close()
@@ -94,10 +94,6 @@ def load_synlist(redo=False):
     else:
         init_synlist()
 
-
-def load_stemlist(redo=False):
-    #always run after load_synlist/init_synlist
-    global stemlist
     g = open(stemfile)
     strs2 = g.read()
     g.close()
@@ -105,8 +101,6 @@ def load_stemlist(redo=False):
         stemlist = defaultdict(set,eval(strs2))
     else:
         exp_stemlist()
-
-
 
 def init_synlist():
     for cat in categories:
@@ -183,11 +177,12 @@ def categorize_related(word):
     if related:
         for rel in related:
             if rel.relationshipType=="equivalent":
-                for relword in rel.words:
-                    if d.check(word):
+                for relword in rel.words[0:min(2,len(rel.words))]:
+                    if d.check(relword):
                         m = categorize(relword)
                         if m:
                             return m
+    return []
 
 def main_cat(word):
     if not d.check(word):
@@ -216,4 +211,3 @@ def get_category(word):
 lst = ["original","unconventional","together","uncertainty","risks","innovate","diversity","inclusive","creative","bold","brilliant","detail-oriented","negotiation","management","dynamic","negotiating","influencing","innovating","problem-solving","team","entrepreneurial","interpersonal","fast-paced","collaborative","prepared","authentic","listener","prioritize","committed","deliver","curious","unconventionally"]
 
 load_synlist()
-load_stemlist()

@@ -12,7 +12,7 @@ class LetterGenerator:
     'Class for the letter generator'
     usefulness_classifier = None
     cat_classifier = None
-    template = "My name is [NM] and I am a [GD] student at [IN].\nI am very interested in this job posting for [PN] at [CN].\nI have experience in [SK] which makes me an appropriate candidate for this job.\n[PQ].\nI think I would do well at this position. Thank you very much!\n[NM]"
+    template = "My name is [NM] and I am a [GD] student at [IN].\nI study [MJ].\nI am very interested in this job posting for [PN] at [CN].\n[QT]\n[PQ].\nI think I would do well at this position. Thank you very much!\n[NM]"
     headers = {
         "creativity": "Creativity defines who I am. ",
 
@@ -110,9 +110,12 @@ class LetterGenerator:
             pe.extract_adjectives(tagged, adjs)
         
         qualities = set()
+        i= 0 
         for adj in adjs.keys():
             quality = cat.get_category(adj)
             qualities |= set(quality)
+            i+=1
+            print i, adj, quality
 
         metadata = ud.get_user_metadata(metadatafile)
         usr_skills, usr_qualities = ud.get_user_skills(skillsfile)
@@ -128,4 +131,20 @@ class LetterGenerator:
         print "requirement qualities:" , qualities
         print matched_qualities
         print matched_skills
+
+
+        result = self.template.replace('[NM]', metadata['name'])
+        result = result.replace('[GD]', metadata['degree'])
+        result = result.replace('[IN]', metadata['institution'])
+        result = result.replace('[MJ]', metadata['major'])
+        result = result.replace('[PN]', metadata['position'])
+        result = result.replace('[CN]', metadata['company'])
+
+        #Forms the [PQ] sentences
+        pq_string = ""
+        for key in matched_qualities:
+            pq_string += self.headers[key] + " " + usr_qualities[key]
+
+        result = result.replace('[PQ]', pq_string)
+        print result
         return
