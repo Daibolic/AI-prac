@@ -3,7 +3,9 @@ from nltk.stem.snowball import EnglishStemmer
 import enchant
 from collections import defaultdict
 
-depth = 1
+depth = 2
+synfile = "catsynonyms.txt"
+stemfile = "catstem.txt"
 
 #Wordnik api
 apiUrl = 'http://api.wordnik.com/v4'
@@ -41,13 +43,16 @@ categories = {"creativity":["creative","innovative","original","authentic","curi
 "execute":["solve","develop","design","implement","deliver","build","plan","do"]}
 
 synlist = defaultdict(set)
+stemlist = defaultdict(set)
 
 reltypes = {"hyponym","synonym","equivalent"}
 expandtype = "etymologically-related-term"
 
 #to synlist, add words 
-def expSynlist(word,cat,i):
-    if d.check(word) and i<=2:
+def exp_synlist(word,cat,i):
+    global synlist
+    #dict for synonyms
+    if d.check(word) and i<=depth:
         synlist[cat].add(word)
         related = wordApi.getRelatedWords(word)
         if related:
@@ -57,29 +62,69 @@ def expSynlist(word,cat,i):
 
                 if rel.relationshipType == expandtype:
                     for term in rel.words:
-                        expSynlist(term,cat,i+1)
+                        exp_synlist(term,cat,i+1)
             synlist[cat].discard("")
+    f = open(synfile,"w")
+    f.write(repr(dict(synlist)))
+    f.close()
+    exp_stemlist()
 
 
-#initialize soft skills dict
-for cat in categories:
-    expSynlist(cat,cat,0)
-    for term in categories[cat]:
-        expSynlist(term,cat,0)
+def exp_stemlist():
+    #creating a dict for stems:
+    global stemlist
+    for key in synlist:
+        stemlist[key] = {stemmer.stem(word) for word in synlist[key]}
+    f = open(stemfile,"w")
+    f.write(repr(dict(stemlist)))
+    f.close()
 
 
-def categorize1(word):
+def load_synlist(redo=False):
+    """
+    set redo to True if data must be downloaded 
+    set to False if local data is to be used
+    """
+    global synlist
+    f = open(synfile)
+    strs = f.read()
+    f.close()
+    if strs and not redo:
+        synlist = defaultdict(set,eval(strs))
+    else:
+        init_synlist()
+
+
+def load_stemlist(redo=False):
+    #always run after load_synlist/init_synlist
+    global stemlist
+    g = open(stemfile)
+    strs2 = g.read()
+    g.close()
+    if strs2 and not redo:
+        stemlist = defaultdict(set,eval(strs2))
+    else:
+        exp_stemlist()
+
+
+
+def init_synlist():
+    for cat in categories:
+        exp_synlist(cat,cat,0)
+        for term in categories[cat]:
+            exp_synlist(term,cat,0)
+
+def match_stem(word):
     """If stem(word) matches stem(item) where item synlist[x], return x
     """
     lst = []
     wstem = stemmer.stem(word)
-    for key in synlist:
-        for syn in synlist[key]:
-            if stemmer.stem(syn)==wstem:
-                lst.append(key)
+    for key in stemlist:
+        if wstem in stemlist[key]:
+            lst.append(key)
     return lst
 
-def categorize2(word):
+def match_suggest(word):
     """
     If any w in d.suggest(stem(word)) in synlist[x],return x
     """
@@ -90,7 +135,7 @@ def categorize2(word):
                 lst.append(key)
     return lst
 
-def categorize3(word):
+def match_full(word):
     """
     if word in synlist[x], return x
     """
@@ -101,45 +146,20 @@ def categorize3(word):
     return lst
 
 def categorize(word):
-    """run categorize1,2,3 on dictionary words.
-    """
-    if not d.check(word):
-        return []
+    l1 = match_full(word)
+    if l1:
+        return l1
 
-    l1 = categorize1(word)
-    l2 = categorize2(word)
-    l3 = categorize3(word)
-    return l1+l2+l3
+    l2 = match_suggest(word)
+    if l2:
+        return l2 
 
-    count = defaultdict(int)
-    for item in l1+l2+l3:
-        count[item]+=1
-    maxval = 0 
-    match = None
-    for key in count:
-        if count[key]>maxval:
-            maxval = count[key]
-            match = key 
-    return match
+    l3 = match_stem(word)
+    if l3:
+        return l3
 
-def categorize_related(word):
-    """
-    Given a word, categorize it by running categorize() on related words.
-    """
-    if not d.check(word):
-        return []
+    return []
 
-    lst = []
-    related = wordApi.getRelatedWords(word)
-    if related:
-        for rel in related:
-            if rel.relationshipType in reltypes :
-                for relword in rel.words+["same-context"]:
-                    #print "item in related words: ", relword
-                    m = categorize(relword)
-                    if m:
-                        lst += m
-    return lst
 
 def count_major(wordlst):
     """
@@ -155,23 +175,27 @@ def count_major(wordlst):
             matches.append(key)
     return matches
 
-def main_cat(word,i):
+def categorize_related(word):
     """
-    Runs full scheme of categorization functions for depth = 2. 
-    i keeps track of current depth (initial expected = 0) 
+    Given a word, categorize it by running categorize() on related words.
     """
+    related = wordApi.getRelatedWords(word)
+    if related:
+        for rel in related:
+            if rel.relationshipType=="equivalent":
+                for relword in rel.words:
+                    if d.check(word):
+                        m = categorize(relword)
+                        if m:
+                            return m
+
+def main_cat(word):
+    if not d.check(word):
+        return []
+
     match1 = categorize(word)
     if match1:
         return count_major(match1)
-
-    match3 = []
-    if i==0:
-        stemlst = d.suggest(stemmer.stem(word))
-        for item in stemlst:
-            m2 = main_cat(item,i+1)
-            match3 += m2
-    if match3:
-        return count_major(match3)
 
     match2 = categorize_related(word)
     if match2:
@@ -181,14 +205,15 @@ def main_cat(word,i):
 
 
 def printcat(word):
-    print word ," is categorized to ", main_cat(word,0)
+    print word ," is categorized to ", main_cat(word)
 
 def get_category(word):
-    return main_cat(word,0)
+    return main_cat(word)
+
 
 
 #Test list#
 lst = ["original","unconventional","together","uncertainty","risks","innovate","diversity","inclusive","creative","bold","brilliant","detail-oriented","negotiation","management","dynamic","negotiating","influencing","innovating","problem-solving","team","entrepreneurial","interpersonal","fast-paced","collaborative","prepared","authentic","listener","prioritize","committed","deliver","curious","unconventionally"]
 
-#for l in lst:
-#    printcat(l)
+load_synlist()
+load_stemlist()

@@ -16,7 +16,7 @@ class LetterGenerator:
     headers = {
         "creativity": "Creativity defines who I am. ",
 
-        "communication": "I communicated effectively under different situations. ",
+        "communication": "I communicate effectively in complex and difficult situations. ",
 
         "collaboration":"Working in a team environment is something I enjoy a lot. ",
 
@@ -24,17 +24,17 @@ class LetterGenerator:
 
         "leadership": "While I am a good follower, I also know how to lead a team. ",
 
-        "entrepreneurial": "Making brand new things gives me thrills all the time. ",
+        "entrepreneurial": "Building something that's never been built before is thrilling to me. ",
 
-        "diverse": "I have met people from many different backgrounds through out my life so far. ",
+        "diverse": "I have worked in diverse teams and interculturally competent. ",
 
-        "motivated": "I not only do things, I do them with passion. ",
+        "motivated": "I am highly driven and passionate about my work. ",
 
         "detail": "While being able to see the big picture is important, I am also able to scrutinize the details. ",
 
         "agile": "I am able to adapt to different environments very quickly. ",
 
-        "execute": "I love the feeling of making things happen. "
+        "execute": "I love to make things happen. I get things done."
     }
 
 
@@ -110,7 +110,7 @@ class LetterGenerator:
             pe.extract_adjectives(tagged, adjs)
         
         qualities = set()
-        for adj in adjs.keys()[:10]:
+        for adj in adjs.keys():
             quality = cat.get_category(adj)
             qualities |= set(quality)
 
