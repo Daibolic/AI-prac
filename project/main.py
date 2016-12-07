@@ -85,24 +85,30 @@ class LetterGenerator:
         f.close()
         
         useful_sents = []
+        print "Classifying Useful Sentences..."
         for sent in sents:
             label = self.usefulness_classifier.classify(fe.sentence_features(sent))
             if (label == 'useful'):
                 useful_sents.append(sent)
+                #print sent
         
         skills_sents = []
         personal_sents = []
+        print "Classifying Sentence Cateogories.."
         for sent in useful_sents:
             label = self.cat_classifier.classify(fe.cat_features(sent))
             if (label == 'skills'):
                 skills_sents.append(sent)
+                #print sent + ": SKILLS"
             else:
                 personal_sents.append(sent)
+                #print sent + ": PERSONAL"
         
         skills = {}
         for sent in skills_sents:
             tagged = nltk.pos_tag(nltk.word_tokenize(sent))
             pe.extract_skill_phrase(tagged, skills)
+        #print "SKILLS EXTRACTED: ", skills
         
         adjs = {}
         for sent in personal_sents:
@@ -132,7 +138,6 @@ class LetterGenerator:
         print matched_qualities
         print matched_skills
 
-
         result = self.template.replace('[NM]', metadata['name'])
         result = result.replace('[GD]', metadata['degree'])
         result = result.replace('[IN]', metadata['institution'])
@@ -140,11 +145,21 @@ class LetterGenerator:
         result = result.replace('[PN]', metadata['position'])
         result = result.replace('[CN]', metadata['company'])
 
+        if (matched_skills == []):
+            result = result.replace('[QT]', '')
+        else:
+            qt_part = ""
+            for item in matched_skills:
+                qt_part = qt_part + item + ", "
+            qt_sent = "I have experience in " + qt_part + "and other relevant areas."
+            result = result.replace('[QT]', qt_sent)
+
         #Forms the [PQ] sentences
         pq_string = ""
         for key in matched_qualities:
-            pq_string += self.headers[key] + " " + usr_qualities[key]
+            pq_string += (self.headers[key] + " " + usr_qualities[key] + "\n")
 
         result = result.replace('[PQ]', pq_string)
+        print "--------------- OUTPUT -----------------\n"
         print result
         return
