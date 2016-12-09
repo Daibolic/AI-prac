@@ -3,10 +3,8 @@ import feature_extractor as fe
 import phrase_extractor as pe
 import categorize as cat
 import userdata as ud
+import operator
 
-
-metadatafile = "metadata.txt"
-skillsfile = "skills.txt"
 
 class LetterGenerator:
     'Class for the letter generator'
@@ -70,11 +68,17 @@ class LetterGenerator:
             self.cat_classifier = classi_c
             return
 
-    def generate_cl(self):
+    def generate_cl(self, example):
+        if (example == 1):
+            metadatafile = "metadata.txt"
+        else:
+            metadatafile = "metadata2.txt"
+        skillsfile = "skills.txt"
+
         """ This is the main function of the project
             It opens a file named original and operate on it.
         """
-        f = open('original', mode = 'r')
+        f = open('original' + str(example), mode = 'r')
         
         sents = []
         line = f.readline()
@@ -115,13 +119,22 @@ class LetterGenerator:
             tagged = nltk.pos_tag(nltk.word_tokenize(sent))
             pe.extract_adjectives(tagged, adjs)
         
-        qualities = set()
+        qualities = []
         i= 0 
         for adj in adjs.keys():
             quality = cat.get_category(adj)
-            qualities |= set(quality)
+            qualities += quality
             i+=1
             print i, adj, quality
+        counts = {}
+        for item in qualities:
+            if item in counts:
+                counts[item] += 1
+            else:
+                counts[item] = 1
+        sorted_counts = sorted(counts.items(), key=operator.itemgetter(1))
+        top_three = sorted_counts[-3:]
+        qualities = [i for (i,j) in top_three]
 
         metadata = ud.get_user_metadata(metadatafile)
         usr_skills, usr_qualities = ud.get_user_skills(skillsfile)
@@ -132,7 +145,7 @@ class LetterGenerator:
             if usr_skill.lower() in [s.lower() for s in skills]:
                 matched_skills.append(usr_skill)
         
-        matched_qualities = qualities & set(usr_qualities.keys())
+        matched_qualities = set(qualities) & set(usr_qualities.keys())
 
         print "requirement qualities:" , qualities
         print matched_qualities

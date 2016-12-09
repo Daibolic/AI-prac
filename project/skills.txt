@@ -1,4 +1,4 @@
-skills: C++,Office,R,Stata,C,Java,Python,OCaml,Linux,Systems,mathematics
+skills: C++,Office,R,Stata,C,Java,Python,OCaml,Linux,Systems,mathematics,finance,accounting,statistics
 creativity: I took several design courses and completed a design project for an external organization. 
 responsibility: I was an RA for a dorm for 3 years and was responsible for the safety and wellbeing for freshmen residents. 
 agile: Last summer, I interned at a startup with a production cycle of 1 week. I enjoy working in in agile, high productivity environments. 
