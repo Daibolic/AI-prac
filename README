@@ -1,0 +1,43 @@
+Requirements:
+Python 2.7 (32 bit version only)
+
+Install the required packages, NLTK and WordNik using:
+
+$ pip install nltk
+$ pip install wordnik
+
+Copy all the information about the company and the job post
+into the file named: original0. Do not leave any empty lines in between sentences
+
+Input all the metadata of the user into the file: metadata.txt. Follow the example of metadata1.txt
+You can replace the content after each colon on each line in the file skills.txt to suit your own skills.
+
+!!! Please rid all the files of illegal characters when you copy from the web, especially to replace all
+single quotation marks with '.
+
+Navigate the the folder ./AI-prac/project
+
+$ python
+$ import main
+
+This will then take a while to load all the required components.
+
+To train the main classifiers:
+
+$ gen = main.LetterGenerator()
+
+To train the main classifiers to get one with the highest accuracy (at the cost of halving the training data size):
+
+$ gen = main.LetterGenerator(False)
+
+After filling all the files as mentioned above, run the program with sample 1:
+
+$ gen.generate_cl(1)
+
+Run the program with sample 2:
+
+$ gen.generate_cl(2)
+
+Run the program with the files you updated above:
+
+$ gen.generate_cl(0)

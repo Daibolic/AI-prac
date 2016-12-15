@@ -68,15 +68,17 @@ class LetterGenerator:
             self.cat_classifier = classi_c
             return
 
-    def generate_cl(self, example):
+    def generate_cl(self, example = 1):
         if (example == 1):
-            metadatafile = "metadata.txt"
-        else:
+            metadatafile = "metadata1.txt"
+        elif (example == 2):
             metadatafile = "metadata2.txt"
+        else:
+            metadatafile = "metadata.txt"
         skillsfile = "skills.txt"
 
         """ This is the main function of the project
-            It opens a file named original and operate on it.
+            It opens a file named original0 and operate on it.
         """
         f = open('original' + str(example), mode = 'r')
         

@@ -1,7 +1,1 @@
-name: Sush
-year: senior
-degree: undergraduate
-major: CS
-institution: Cornell
-position: Software Engineer
-company: Cisco
+This is where you put in your metadata. Follow example of metadata1.txt and delete this line.
